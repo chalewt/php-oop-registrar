@@ -10,30 +10,30 @@
 </head>
 
 <body>
-
-    <div class="row p-2">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header">
-                    College Registration Form
-                </div>
-                <div class="card-body">
-                    <form action="register.php" method="POST">
-                        <div class="form-group"> 
-                            <label for="txtName">College</label> 
-                            <input class="form-control" type="text" id="txtName" name="txtName" placeholder="College"> 
-                        </div>
-                        <div class="form-group"> 
-                            <label for="txtPhone">Phone</label> 
-                            <input type="text" class="form-control" id="txtPhone" name="txtPhone" placeholder="Phone"> 
-                        </div>
-                        <div class="form-group t-1"> 
-                            <input type="submit" value="Save" name="submit" class="btn btn-primary" /> 
-                        </div>
-                    </form>
+    <div class="container-fluid">
+        <div class="row pt-2">
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-header">
+                        College Registration Form
+                    </div>
+                    <div class="card-body">
+                        <form action="register.php" method="POST">
+                            <div class="form-group">
+                                <label for="txtName">College</label>
+                                <input class="form-control" type="text" id="txtName" name="txtName" placeholder="College">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtPhone">Phone</label>
+                                <input type="text" class="form-control" id="txtPhone" name="txtPhone" placeholder="Phone">
+                            </div>
+                            <div class="form-group pt-2">
+                                <input type="submit" value="Save" name="submit" class="btn btn-primary" />
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
