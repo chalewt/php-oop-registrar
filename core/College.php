@@ -46,7 +46,7 @@ class College
 
     public function get()
     {
-        $sql = "select * from college";
+        $sql = "select * from registrar.college";
         $dbConn = new DbConnection();
         $conn = $dbConn->connect();
         $query = $conn->prepare($sql);

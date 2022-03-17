@@ -27,6 +27,8 @@
             $is_success = $college->register($college);
             if ($is_success == true) {
                 $msg = "Record saved successfully.";
+                print_r($college->get());
+
             } else {
                 $msg =  "Sorry, Something went wrong. Try again.";
             }
