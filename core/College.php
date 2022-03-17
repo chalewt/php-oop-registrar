@@ -4,6 +4,12 @@ class College
     private $id;
     private $name;
     private $phone;
+    //construct
+    public function __construct() {
+        $this->id = intval($this->id);
+        $this->name = $this->name;
+        $this->name = $this->name;
+    }
     //Setter & Getter 
     
     public function setId($id)
@@ -51,7 +57,7 @@ class College
         $conn = $dbConn->connect();
         $query = $conn->prepare($sql);
         $query->execute();
-        $result = $query->fetchAll();
+        $result = $query->fetchAll(PDO::FETCH_CLASS,'College');
         return $result;
     }
 }
