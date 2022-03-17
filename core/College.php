@@ -43,4 +43,15 @@ class College
         $is_success = $conn->lastInsertId();
         return $is_success;
     }
+
+    public function get()
+    {
+        $sql = "select * from college";
+        $dbConn = new DbConnection();
+        $conn = $dbConn->connect();
+        $query = $conn->prepare($sql);
+        $query->execute();
+        $result = $query->fetchAll();
+        return $result;
+    }
 }
